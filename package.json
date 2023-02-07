@@ -65,8 +65,5 @@
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
     "release": "standard-version"
   },
-  "target": "web",
-  "dependencies": {
-    "ramda": "^0.27.1"
-  }
+  "target": "web"
 }
