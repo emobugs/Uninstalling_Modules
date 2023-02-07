@@ -7,6 +7,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const filteredArray = numbersArray.filter(n => {
     return n % 2 === 0;
     })
+    filteredArray.forEach(e => {
+      const li = document.createElement('li');
+      li.innerText = e;
+      document.querySelector('ul').appendChild(li);
+    })
   // })
   // const isEven = (n) => n % 2 === 0;
   // const filteredArray = R.filter(isEven, numbersArray);
